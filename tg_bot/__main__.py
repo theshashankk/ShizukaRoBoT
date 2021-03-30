@@ -55,9 +55,9 @@ Hello! my name *{}*.
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
-MEIKO_IMG = "https://telegra.ph/file/48d2e685a74ffb2273397.jpg"
+MEIKO_IMG = "https://telegra.ph/file/6d3faf98f11e4740b2608.jpg"
 
-DONATE_STRING = """No need to donate for hitomi"""
+DONATE_STRING = """No need to donate for Shizuka"""
 
 
 
@@ -148,8 +148,8 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-         [[InlineKeyboardButton(text="Add Hitomi To Your Group", url="https://t.me/hitomi_robot?startgroup=new")],
-         [InlineKeyboardButton(text="Support Group 👥", url="https://t.me/Dark_cobra_support")],
+         [[InlineKeyboardButton(text="Add Shizuka To Your Group", url="https://t.me/Shizuka_RoBoT?startgroup=new")],
+         [InlineKeyboardButton(text="Support Group 👥", url="https://t.me/ShizukaSupport")],
          [InlineKeyboardButton(text="Help And Commands ❔", callback_data="help_back")]])
             update.effective_message.reply_photo(MEIKO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
